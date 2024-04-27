@@ -1,4 +1,5 @@
 version: '3.9'
+name: 'php_rest'
 services:
   php-env:
     build:
@@ -15,7 +16,6 @@ services:
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
-      MYSQL_USER: root
       MYSQL_DATABASE:  notes_db_vk
       MYSQL_PASSWORD: null
       MYSQL_ALLOW_EMPTY_PASSWORD: true
