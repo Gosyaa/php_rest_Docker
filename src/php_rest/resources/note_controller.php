@@ -272,7 +272,7 @@ class NoteController{
     /**
      * @OA\Delete(
      *     path="/php_rest/note/",
-     *     summary="Метод для получения заметки по ID",
+     *     summary="Метод для получения заметки по ID (Обязательна авторизация)",
      *     tags={"notes"},
      *     security={{"bearerAuth": {}}},
      *     @OA\Parameter(
